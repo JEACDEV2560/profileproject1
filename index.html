@@ -240,21 +240,21 @@
 
     <!-- SECCTION C O N T A C T O -->
     <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <h3 class="titulo-seccion">Contactame  ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formsubmit.co/josiascorcega120@gmail.com" method="post">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="name">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
-                </div>
+                    <input type="text" placeholder="Asunto..." class="input-full" name="asunto">
+               
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
                 </div>
 
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar btn-success" name="Enviar" id="btn-enviar">
             </form>
         </div>
     </section>
@@ -271,6 +271,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 </body>
 
 </html>

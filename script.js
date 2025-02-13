@@ -41,7 +41,13 @@ function efectoHabilidades() {
 }
 
 
-const temaOscuro = ()=>{
-    document.querySelector("body").setAttribute("data-bs-theme", "dark");
-    document.querySelector("body").setAttribute("data-bs-theme", "light");
-}
+
+$('#btn-enviar').click(function(){
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 1500
+      });
+})
